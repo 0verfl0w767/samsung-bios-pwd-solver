@@ -40,3 +40,8 @@ function samsung44HexKeygen(serial) {
     }
     return password;
 }
+
+function submit() {
+  const id = document.getElementById("serials").value
+  document.getElementById("password").innerHTML = samsung44HexKeygen(id);
+}
